@@ -9,9 +9,8 @@ public class Mycd {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		for (int counter = 0; counter < 12; counter++) {
+		while (true) {
 			StringTokenizer st = new StringTokenizer(scan.nextLine());
-			st.nextToken();// # at beginning
 			if (st.nextToken().equals("mycd")) {
 				ArrayDeque<String> path = new ArrayDeque<>();
 				StringTokenizer pathString = new StringTokenizer(st.nextToken(), "/");
@@ -52,7 +51,6 @@ public class Mycd {
 				}
 			}
 		}
-		scan.close();
 	}
 
 	static boolean isAlphanumeric(String s) {
