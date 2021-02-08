@@ -1,24 +1,60 @@
+mycd / /
+/
+mycd / .
+/
+mycd / ..
+/
 mycd / abc
 /abc
-mycd /abc/def ghi
-/abc/def/ghi
+mycd / ......
+......: No such file or directory
+mycd /abc /
+/
+mycd /abc .
+/abc
+mycd /abc ..
+/
+mycd /abc def
+/abc/def
+mycd /abc ......
+......: No such file or directory
+mycd /abc/def /
+/
+mycd /abc/def .
+/abc/def
 mycd /abc/def ..
 /abc
-mycd /abc/def /abc
-/abc
-mycd /abc/def /abc/klm
-/abc/klm
-mycd /abc/def ../..
-/
-mycd /abc/def ../../..
-/
-mycd abc/def .
-/abc/def
-mycd /abc/def ..klm
-..klm: No such file or directory
-mycd /abc/def //////
-/
+mycd /abc/def hij
+/abc/def/hij
 mycd /abc/def ......
 ......: No such file or directory
-mycd /abc/def ../gh///../klm/.
-/abc/klm
+mycd /abc //
+/
+mycd /abc /.
+/
+mycd /abc ..
+/
+mycd /abc /def
+/def
+mycd /abc ....../......
+......: No such file or directory
+mycd /abc/def //
+/
+mycd /abc/def /./.
+/
+mycd /abc/def ../..
+/
+mycd /abc/def ../.
+/abc
+mycd /abc/def ./..
+/abc
+mycd /abc/def /hij/klm
+/hij/klm
+mycd /abc/def hij/klm
+/abc/def/hij/klm
+mycd /abc/def ....../hij
+......: No such file or directory
+mycd /abc/def hij/......
+......: No such file or directory
+mycd /abc/def ../hij///../kim/.
+/abc/kim
